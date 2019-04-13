@@ -11,7 +11,7 @@ class About extends Component {
     return (
       <div className={styles.about}>
         <Container>
-          <div className={styles.content}>
+          <div className={styles.wrapper}>
             <div className={styles.title}>
             Explore it
             </div>

@@ -4,18 +4,20 @@ import styles from './Feature.module.css';
 
 class Feature extends Component {
 static propTypes = {
-  img: PropTypes.any,
+  img: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
 }
 
   static defaultProps = {
-    img: null,
+    img: '',
     title: '',
     subtitle: '',
   }
 
   render() {
+  // console.log(this.props);
+
     return (
       <div className={styles.feature}>
         <div><img src={this.props.img} alt="feature" /></div>

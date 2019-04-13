@@ -1,7 +1,6 @@
 .feature {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
 }
 
@@ -11,8 +10,7 @@
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.264px;
-
-    color: #606060;
+    color: var(--gray-color);
 }
 
 .subtitle {
@@ -23,6 +21,5 @@
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.168px;
-
-    color: #929292;
+    color: var(--light-gray-color);
 }
