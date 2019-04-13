@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 200px 50px;
+}
+
+.content::before {
+    content: '';
+    width: 80%;
+    background: #D3D3D3;
+    top: 0px;
+    display: block;
+    position: absolute;
+    height: 1px;
+    left: 10%;
+    bottom: 0;
+}
+
+.logo {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.288px;
+    color: #737373;
+}
+
+.designer {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.204px;
+    color: #737373;
+}
+
+.menu {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    color: #737373;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 585px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-left: 29px;
+}
+
+.menu a:visited {
+    color: #737373;
+}

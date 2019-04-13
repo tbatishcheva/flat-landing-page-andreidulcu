@@ -1,0 +1,28 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.title {
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.264px;
+
+    color: #606060;
+}
+
+.subtitle {
+    margin-top: 5px;
+    max-width: 240px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.168px;
+
+    color: #929292;
+}
