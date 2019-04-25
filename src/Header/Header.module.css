@@ -1,39 +1,57 @@
 .header {
     background: url("./waves.png") no-repeat, linear-gradient(180deg, #32AEDE 0%, #3498DB 100%);
-    background-position: bottom;
+    background-position: bottom center;
     display: flex;
     justify-content: center;
 }
 
-.wrapper {
+.headerWrapper {
+    background: url("./phone.png") no-repeat;
+    background-position: bottom left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "logo menu" ". content";
+    min-height: 900px;
+    height: 100vh;
+}
+
+.logoWrapper {
+    grid-area: logo;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 0 0;
 }
 
 .contentWrapper {
+    grid-area: content;
     display: flex;
     flex-direction: column;
-    margin-top: 159px;
-    align-items: flex-end;
-    margin-bottom: 300px;
+    align-items: flex-start;
+    margin: 160px 0 0 0;
+}
+
+.menuWrapper {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
 }
 
 .title {
     font-size: 64px;
     line-height: 60px;
-    letter-spacing: 0.768px;
     color: var(--white-color);
+    text-shadow: 0 0 15px #666;
 }
 
 .subtitle {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    letter-spacing: 0.288px;
     color: var(--white-color);
-    max-width: 575px;
     margin-top: 40px;
     margin-bottom: 70px;
+    text-shadow: 0 0 15px #666;
 }
 
 .button {
@@ -41,7 +59,6 @@
     font-size: 22px;
     line-height: 27px;
     text-align: center;
-    letter-spacing: 0.264px;
     color: var(--white-color);
     text-decoration: none;
     padding: 15px 30px;
@@ -65,15 +82,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-width: 585px;
-    margin-top: 55px;
-    margin-right: 30px;
-    padding-bottom: 30px;
 }
 
 .menu a {
     text-decoration: none;
-    margin-left: 30px;
     color: var(--white-color);
 }
 
@@ -81,10 +93,8 @@
     color: var(--white-color);
 }
 
-.menuWrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.menuItem {
+    margin-right: 30px;
 }
 
 .download a {
@@ -101,4 +111,14 @@
     border-radius: 98px;
     padding: 15px 30px;
     text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
 }

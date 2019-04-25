@@ -1,6 +1,8 @@
 .features {
     background-color: var(--white-color);
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -9,12 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-bottom: 50px;
+    min-height:900px;
+    height:100vh;
 }
 
 .title {
-    margin-top: 50px;
     font-weight: 300;
     font-size: 50px;
     line-height: 61px;
@@ -29,28 +30,27 @@
     line-height: 30px;
     letter-spacing: 0.3px;
     color: var(--light-gray-color);
+    position: relative;
 }
 
 .subtitle::after {
     content: '';
-    width: 349px;
+    width: 80%;
     background: var(--orange-color);
-    box-shadow: 0px 8px 11px rgba(255, 194, 97, 0.371207);
-    top: 182px;
+    box-shadow: 0 8px 11px rgba(255, 194, 97, 0.37);
+    bottom: -20px;
     border-color: var(--orange-color);
     display: block;
     position: absolute;
     height: 6px;
-    left: 30%;
-    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .grid {
-    margin-top: 80px;
+    margin-top: 115px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
-    max-width: 870px;
-    max-height: 620px;
     grid-gap: 70px;
 }

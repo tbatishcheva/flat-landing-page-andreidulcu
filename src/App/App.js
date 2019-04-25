@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Features from '../Features/Features';
 import About from '../About/About';
-import Newsletter from '../Newsletter/Newsletter';
-import Footer from '../Footer/Footer';
+import LastSlide from '../LastSlide/LastSlide';
 
 class App extends Component {
   render() {
@@ -12,8 +11,7 @@ class App extends Component {
         <Header />
         <Features />
         <About />
-        <Newsletter />
-        <Footer />
+        <LastSlide />
       </>
     );
   }

@@ -1,4 +1,7 @@
 .container {
-    max-width: 1440px;
+    max-width: 1210px;
+    padding: 0 15px;
     position: relative;
+    width: 100%;
+    min-height: 100vh;
 }

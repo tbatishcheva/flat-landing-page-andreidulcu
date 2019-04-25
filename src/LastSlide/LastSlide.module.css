@@ -1,0 +1,29 @@
+.lastSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastSlideWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 900px;
+    height: 100vh;
+}
+
+.NewsletterWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterWrapper {
+    height: 100px;
+    border-top: 1px solid #D3D3D3;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+;
+}
+

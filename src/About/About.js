@@ -17,8 +17,8 @@ class About extends Component {
             </div>
             <div className={`${styles.blackRect} ${styles.icons}`}><img src={blackRect} alt="blackRect" /></div>
             <div className={`${styles.whiteRectLeft} ${styles.icons}`}><img src={whiteRect} alt="whiteRect" /></div>
-            <div className={styles.img}>
-              <img src={video} alt="video" />
+            <div className={styles.imgWrapper}>
+              <img src={video} alt="video" className={styles.img} />
             </div>
             <div className={`${styles.blackRectHollow} ${styles.icons}`}><img src={blackRectHollow} alt="blackRectHollow" /></div>
             <div className={`${styles.whiteRectRight} ${styles.icons}`}><img src={whiteRect} alt="whiteRect" /></div>
